@@ -1,0 +1,101 @@
+INFO 2019-05-10 16:48:05,156 basehttp 124 "GET /image_codes/aaa HTTP/1.1" 301 0
+ERROR 2019-05-10 16:48:05,218 exception 135 Internal Server Error: /image_codes/aaa/
+Traceback (most recent call last):
+  File "/Users/huozhanping/.virtualenvs/Django/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/huozhanping/.virtualenvs/Django/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/huozhanping/.virtualenvs/Django/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/huozhanping/.virtualenvs/Django/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/huozhanping/.virtualenvs/Django/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/huozhanping/.virtualenvs/Django/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/huozhanping/.virtualenvs/Django/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/huozhanping/.virtualenvs/Django/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/huozhanping/Documents/object/Django/meiduo_mall/meiduo/meiduo/apps/users/views.py", line 26, in get
+    text, image = captcha.generate_captcha()
+AttributeError: module 'meiduo.libs.captcha.captcha' has no attribute 'generate_captcha'
+ERROR 2019-05-10 16:48:05,342 basehttp 124 "GET /image_codes/aaa/ HTTP/1.1" 500 89509
+INFO 2019-05-10 16:50:28,985 basehttp 124 "GET /image_codes/aaa123 HTTP/1.1" 301 0
+ERROR 2019-05-10 16:50:29,007 exception 135 Internal Server Error: /image_codes/aaa123/
+Traceback (most recent call last):
+  File "/Users/huozhanping/.virtualenvs/Django/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/huozhanping/.virtualenvs/Django/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/huozhanping/.virtualenvs/Django/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/huozhanping/.virtualenvs/Django/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/huozhanping/.virtualenvs/Django/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/huozhanping/.virtualenvs/Django/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/huozhanping/.virtualenvs/Django/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/huozhanping/.virtualenvs/Django/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/huozhanping/Documents/object/Django/meiduo_mall/meiduo/meiduo/apps/users/views.py", line 26, in get
+    text, image = captcha.generate_captcha()
+AttributeError: module 'meiduo.libs.captcha.captcha' has no attribute 'generate_captcha'
+ERROR 2019-05-10 16:50:29,073 basehttp 124 "GET /image_codes/aaa123/ HTTP/1.1" 500 89575
+ERROR 2019-05-10 16:51:11,606 exception 135 Internal Server Error: /image_codes/aaa123/
+Traceback (most recent call last):
+  File "/Users/huozhanping/.virtualenvs/Django/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/huozhanping/.virtualenvs/Django/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/huozhanping/.virtualenvs/Django/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/huozhanping/.virtualenvs/Django/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/huozhanping/.virtualenvs/Django/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/huozhanping/.virtualenvs/Django/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/huozhanping/.virtualenvs/Django/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/huozhanping/.virtualenvs/Django/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/huozhanping/Documents/object/Django/meiduo_mall/meiduo/meiduo/apps/users/views.py", line 26, in get
+    text, image = captcha.generate_captcha()
+AttributeError: module 'meiduo.libs.captcha.captcha' has no attribute 'generate_captcha'
+ERROR 2019-05-10 16:51:11,724 basehttp 124 "GET /image_codes/aaa123/ HTTP/1.1" 500 89860
+WARNING 2019-05-10 16:51:25,798 base 152 Not Found: /
+WARNING 2019-05-10 16:51:25,799 basehttp 124 "GET / HTTP/1.1" 404 2105
+INFO 2019-05-10 16:56:59,176 basehttp 124 "GET /image_codes/aaa123/ HTTP/1.1" 200 2953
+INFO 2019-05-10 17:02:45,790 basehttp 124 "GET /image_codes/6f5d19ad-3d77-4577-907a-7d7e8c86573a/ HTTP/1.1" 200 3505
+INFO 2019-05-10 17:02:47,700 basehttp 124 "GET /image_codes/1d9a007d-fff1-40bb-8f87-ec2db8e76a2e/ HTTP/1.1" 200 3510
+INFO 2019-05-10 17:02:48,439 basehttp 124 "GET /image_codes/1b3d5a56-c5aa-481a-b744-9573ba1ec6bf/ HTTP/1.1" 200 3272
+INFO 2019-05-10 17:02:49,033 basehttp 124 "GET /image_codes/5b2138c0-e74c-472f-8129-4dc036462f69/ HTTP/1.1" 200 3408
+INFO 2019-05-10 17:03:16,898 basehttp 124 "GET /image_codes/5b2138c0-e74c-472f-8129-4dc036462f69/ HTTP/1.1" 200 3263
+INFO 2019-05-10 17:07:23,075 basehttp 124 "GET /image_codes/00380718-89ed-4db9-a58e-4a17f711890f/ HTTP/1.1" 200 2870
+INFO 2019-05-10 17:09:04,081 basehttp 124 "GET /image_codes/eac3d57f-6162-4a5d-ac57-154bc7d76d2d/ HTTP/1.1" 200 3482
+INFO 2019-05-10 23:51:37,579 basehttp 124 "GET /image_codes/9e084431-2ad2-41da-8f4f-f38b443d6505/ HTTP/1.1" 200 2726
+INFO 2019-05-10 23:51:49,752 basehttp 124 "GET /image_codes/973ad355-3528-4804-84cb-34d0a43762eb/ HTTP/1.1" 200 2824
+WARNING 2019-05-11 00:20:03,776 base 152 Not Found: /image_codes/aaaadd
+WARNING 2019-05-11 00:20:03,777 basehttp 124 "GET /image_codes/aaaadd HTTP/1.1" 404 1983
+WARNING 2019-05-11 00:20:04,032 base 152 Not Found: /favicon.ico
+WARNING 2019-05-11 00:20:04,032 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 1962
+WARNING 2019-05-11 00:21:23,668 base 152 Not Found: /image_codes/aaaadd
+WARNING 2019-05-11 00:21:23,669 basehttp 124 "GET /image_codes/aaaadd HTTP/1.1" 404 1983
+WARNING 2019-05-11 00:21:28,546 base 152 Not Found: /image_codes/aaaaddaad123
+WARNING 2019-05-11 00:21:28,547 basehttp 124 "GET /image_codes/aaaaddaad123 HTTP/1.1" 404 2001
+INFO 2019-05-11 00:37:30,904 basehttp 124 "GET /image_codes/37754d8f-691b-4b91-8317-a1bb5004a430/ HTTP/1.1" 200 3177
+INFO 2019-05-11 00:37:31,939 basehttp 124 "GET /image_codes/31d3908f-d60c-4b6a-9301-2caccea97658/ HTTP/1.1" 200 3220
+INFO 2019-05-11 00:37:32,471 basehttp 124 "GET /image_codes/4cf710dc-4ecd-4402-8847-ed2d97404558/ HTTP/1.1" 200 3450
+INFO 2019-05-11 00:37:32,919 basehttp 124 "GET /image_codes/cc2b00e4-aa56-407a-b9c3-9a6be902f6f5/ HTTP/1.1" 200 3439
+INFO 2019-05-11 00:37:33,392 basehttp 124 "GET /image_codes/645d0c8b-a1c7-4a26-b426-29eb6eb0bf93/ HTTP/1.1" 200 3172
+INFO 2019-05-11 00:37:33,905 basehttp 124 "GET /image_codes/430ebe59-1e24-4187-8087-06113e595bb2/ HTTP/1.1" 200 3112
+INFO 2019-05-11 00:38:31,561 basehttp 124 "GET /image_codes/b1919030-0dc9-4487-bbf7-f4dca32d66f9/ HTTP/1.1" 200 3142
+INFO 2019-05-11 00:38:54,374 basehttp 124 "GET /image_codes/aaaaddaad123 HTTP/1.1" 301 0
+INFO 2019-05-11 00:38:54,405 basehttp 124 "GET /image_codes/aaaaddaad123/ HTTP/1.1" 200 3244
+INFO 2019-05-11 00:43:42,806 basehttp 124 "GET /image_codes/42d4f08e-fb42-4fd0-87f6-264e77416afe/ HTTP/1.1" 200 3118
+INFO 2019-05-11 00:44:48,011 basehttp 124 "GET /image_codes/0b9863fe-d839-443a-93c7-61afab0b9031/ HTTP/1.1" 200 3177
+INFO 2019-05-11 00:44:50,755 basehttp 124 "GET /image_codes/e2af9c3a-db0b-45a0-a1ef-602fb7580fe3/ HTTP/1.1" 200 3246
+INFO 2019-05-11 00:44:55,770 basehttp 124 "GET /image_codes/a2837822-9928-45e1-9380-65d33e1a47d7/ HTTP/1.1" 200 3676
