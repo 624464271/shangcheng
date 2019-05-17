@@ -1,13 +1,4 @@
-*.iws
-*.iml
-*.ipr
-target/
-.settings
-.project
-.classpath
-.externalToolBuilders
+.idea
 *.class
-*svn/
-.idea/
-*.jar
-~*
+*.iml
+target

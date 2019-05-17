@@ -12,6 +12,7 @@ class ImageCodeView(APIView):
     图片验证码
     """
     pass
+    #test
 
 
 class ImageCodeView(APIView):
@@ -35,3 +36,20 @@ class ImageCodeView(APIView):
         # 固定返回验证码图片数据，不需要REST framework框架的Response帮助我们决定返回响应数据的格式
         # 所以此处直接使用Django原生的HttpResponse即可
         return HttpResponse(image, content_type="images/jpg")
+
+class SMSCodeView():
+
+    """
+    短信验证码
+    传入参数：
+        mobile, image_code_id, text
+    """
+    def get(self,request):
+
+        pass
+        # 获取前端数据
+        # 数据验证
+        # 生成短信验证码
+        # 保存短信验证码
+        # 发送短信
+        # 结果返回
