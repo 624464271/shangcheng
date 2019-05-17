@@ -12,7 +12,7 @@ class ImageCodeView(APIView):
     图片验证码
     """
     pass
-    #test
+    #testaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 
 class ImageCodeView(APIView):
